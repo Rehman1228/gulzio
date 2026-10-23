@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gulzio | AI Automation</title>
+<meta name="description" content="Gulzio builds AI systems that handle your leads, support and follow-ups: lead capture, AI support agents and workflow automation.">
+<meta property="og:title" content="Gulzio | AI Automation">
+<meta property="og:description" content="AI systems that handle your leads, support and follow-ups.">
+<meta property="og:image" content="assets/banner.png">
+<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<style>
+:root{--navy:#0a2043;--blue:#3b82f6;--ink:#1e2a44;--muted:#5b6b88;--bg:#f4f7fc;--card:#fff;--line:#e3e9f3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.25rem;color:var(--navy)}
+.brand img{width:34px;height:34px}
+.links{display:flex;gap:22px;align-items:center;font-size:.95rem;color:var(--muted)}
+.links a:hover{color:var(--navy)}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:12px 22px;border-radius:10px;font-weight:600;transition:.2s}
+.btn:hover{background:var(--blue)}
+.btn.ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.hero{background:var(--bg);padding:80px 0 90px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;color:var(--navy);max-width:720px;letter-spacing:-.02em}
+.hero p{margin:18px 0 28px;color:var(--muted);font-size:1.15rem;max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.tags{margin-top:30px;color:var(--muted);font-size:.95rem}
+section{padding:72px 0}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);color:var(--navy);letter-spacing:-.01em;margin-bottom:10px}
+.lead{color:var(--muted);max-width:600px;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(10,32,67,.08)}
+.icon{width:44px;height:44px;border-radius:12px;background:var(--navy);display:grid;place-items:center;margin-bottom:16px}
+.icon svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{color:var(--navy);margin-bottom:6px}
+.card p{color:var(--muted);font-size:.97rem}
+.alt{background:var(--bg)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.step{counter-increment:s;padding:24px;background:#fff;border-radius:16px;border:1px solid var(--line)}
+.step:before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;margin-bottom:12px}
+.step h3{color:var(--navy);margin-bottom:4px}.step p{color:var(--muted);font-size:.95rem}
+.about{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:center}
+.about img{width:100%;border-radius:20px;aspect-ratio:1;object-fit:cover}
+.about p{color:var(--muted);margin-bottom:14px}
+.contact{background:var(--navy);color:#fff;text-align:center;border-radius:24px;padding:56px 24px}
+.contact h2{color:#fff}.contact p{color:#b9c6e0;margin:8px auto 26px;max-width:480px}
+.contact .btn{background:var(--blue)}.contact .btn:hover{background:#fff;color:var(--navy)}
+.contact .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.contact .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.contact .btn.ghost:hover{background:#fff;color:var(--navy)}
+footer{padding:32px 0;color:var(--muted);font-size:.9rem;text-align:center}
+@media(max-width:720px){.links a:not(.btn){display:none}.about{grid-template-columns:1fr}.about img{max-width:220px}.hero{padding:56px 0 64px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#top"><img src="assets/logo-mark.png" alt="">Gulzio</a>
+  <div class="links"><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a class="btn" href="#contact">Contact</a></div>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <h1>I build AI systems that handle your leads, support and follow-ups.</h1>
+  <p>Stop losing customers to slow replies. Gulzio sets up automation that works around the clock so you can focus on running your business.</p>
+  <div class="cta"><a class="btn" href="#contact">Book a free call</a><a class="btn ghost" href="#services">See services</a></div>
+  <div class="tags">Lead capture · AI support agents · Workflow automation</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>What I can automate for you</h2>
+  <p class="lead">Practical systems built around your business, not generic templates.</p>
+  <div class="grid">
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg></div><h3>Lead capture</h3><p>Forms, chat and ads feed straight into your CRM. Every lead is qualified and followed up automatically.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>AI support agents</h3><p>Chatbots trained on your business answer customer questions instantly and hand off to you when needed.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="12" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8.3 7.2l7.4 3.6M8.3 16.8l7.4-3.6"/></svg></div><h3>Workflow automation</h3><p>Connect your tools and remove repetitive tasks like data entry, reminders, invoices and reports.</p></div>
+  </div>
+</div></section>
+
+<section id="process" class="alt"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="lead">A simple process from first call to a working system.</p>
+  <div class="steps">
+    <div class="step"><h3>Discovery</h3><p>We map where you lose time and leads.</p></div>
+    <div class="step"><h3>Design</h3><p>I plan the automation and tools to use.</p></div>
+    <div class="step"><h3>Build</h3><p>Your system is built and tested end to end.</p></div>
+    <div class="step"><h3>Launch & support</h3><p>Go live with training and ongoing help.</p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="about">
+    <img src="assets/profile.png" alt="Founder of Gulzio">
+    <div>
+      <h2>Hi, I'm the founder of Gulzio</h2>
+      <p>I'm an AI automation specialist based in Pakistan, building systems with tools like n8n for businesses that want to save time and respond to customers faster.</p>
+      <p>My goal is simple: make AI useful for real businesses with clear, reliable automation.</p>
+      <a class="btn" href="#contact">Work with me</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <h2>Let's automate your business</h2>
+    <p>Tell me what slows you down and I'll suggest a system to fix it.</p>
+    <div class="row">
+      <a class="btn" href="mailto:rehmangul2494@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/company/gulzio/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="y"></span> Gulzio · AI Automation · gulzio.com</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
