@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gulzio | AI Automation & Agentic AI by Rehman Gul</title>
+<meta name="description" content="Gulzio builds AI automation, AI support agents and agentic AI workflows for clinics and schools. Founded by Rehman Gul.">
+<meta name="author" content="Rehman Gul">
+<link rel="canonical" href="https://gulzio.com/">
+<meta property="og:title" content="Gulzio | AI Automation & Agentic AI">
+<meta property="og:description" content="Lead capture, AI support agents and workflow automation. Founded by Rehman Gul.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gulzio.com/">
+<meta property="og:image" content="https://gulzio.com/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a1f44">
+<link rel="icon" href="logo.png">
+<style>
+:root{
+ --aqua:#7fffd4;--aqua-soft:#e6fff6;--aqua-mid:#bff9e6;--teal:#0fb59a;--teal-dark:#0a8a76;
+ --navy:#0a1f44;--blue:#2f7bff;--bg:#f7fcfb;--text:#17254a;--muted:#5a6a88;--line:#dfeee9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:1px solid rgba(127,255,212,.18)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;font-size:1.3rem;letter-spacing:-.3px}
+.badge{width:44px;height:44px;border-radius:50%;background:#fff;border:2px solid var(--aqua);display:grid;place-items:center;overflow:hidden;flex:none;box-shadow:0 0 0 4px rgba(127,255,212,.15)}
+.badge img{width:100%;height:100%;object-fit:cover}
+.badge b{color:var(--navy);font-size:1.2rem}
+nav{display:flex;align-items:center;gap:6px}
+nav a{color:#cfe3f5;padding:8px 14px;border-radius:8px;font-size:.95rem;font-weight:500}
+nav a:hover{color:var(--aqua)}
+nav a.cta{background:var(--aqua);color:var(--navy);font-weight:700;margin-left:8px}
+nav a.cta:hover{background:#9bffe0;color:var(--navy)}
+.menu-btn{display:none;background:none;border:1px solid rgba(127,255,212,.4);color:var(--aqua);width:42px;height:42px;border-radius:10px;font-size:1.4rem;cursor:pointer}
+
+/* Hero */
+.hero{background:linear-gradient(160deg,#f1fffa 0%,var(--aqua-mid) 60%,var(--aqua) 140%);padding:84px 0 92px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(127,255,212,.6),transparent 70%)}
+.hero .wrap{display:grid;gap:48px;grid-template-columns:1fr;align-items:center;position:relative;z-index:1}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--aqua);color:var(--teal-dark);padding:7px 16px;border-radius:99px;font-size:.85rem;font-weight:600;margin-bottom:20px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--teal);display:inline-block}
+h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.1;color:var(--navy);letter-spacing:-1.2px;font-weight:800}
+h1 span{background:linear-gradient(90deg,var(--teal),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:#34466b;margin:20px 0 30px;max-width:560px}
+.btn{display:inline-block;padding:14px 28px;border-radius:12px;font-weight:700;font-size:1rem;margin:0 10px 10px 0;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--navy);color:#fff;box-shadow:0 8px 20px rgba(10,31,68,.25)}
+.btn.primary:hover{box-shadow:0 12px 26px rgba(10,31,68,.3)}
+.btn.outline{border:2px solid var(--navy);color:var(--navy);background:transparent}
+.btn.aqua{background:var(--aqua);color:var(--navy)}
+.btn.light{border:2px solid rgba(255,255,255,.4);color:#fff}
+
+/* Flow card in hero */
+.flow{background:#fff;border-radius:22px;padding:26px;box-shadow:0 20px 50px rgba(10,31,68,.15);border:1px solid var(--line)}
+.flow h4{font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal-dark);margin-bottom:16px}
+.row{display:flex;align-items:center;gap:14px;padding:14px;border-radius:14px;background:var(--aqua-soft);margin-bottom:10px}
+.row .ic{width:42px;height:42px;border-radius:12px;background:var(--navy);display:grid;place-items:center;font-size:1.2rem;flex:none}
+.row p{font-size:.95rem;font-weight:600;color:var(--navy);line-height:1.35}
+.row p small{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+.arrow{text-align:center;color:var(--teal);font-size:1.1rem;line-height:1;margin:-2px 0 8px}
+
+/* Stats */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;padding-top:30px;padding-bottom:30px;text-align:center}
+.stats strong{display:block;font-size:1.6rem;color:var(--aqua)}
+.stats span{font-size:.9rem;color:#b9cde6}
+
+/* Sections */
+section{padding:84px 0}
+.eyebrow{color:var(--teal-dark);font-weight:700;font-size:.85rem;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);color:var(--navy);line-height:1.2;letter-spacing:-.6px;margin-bottom:12px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:42px;font-size:1.05rem}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(10,31,68,.09);border-color:var(--aqua)}
+.card .ico{width:52px;height:52px;border-radius:14px;background:var(--aqua-mid);display:grid;place-items:center;font-size:1.6rem;margin-bottom:16px}
+.card h3{color:var(--navy);margin-bottom:8px;font-size:1.15rem}
+.card p{color:var(--muted);font-size:.97rem}
+.alt{background:var(--aqua-soft)}
+.steps{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.step{background:#fff;border-radius:18px;padding:30px 24px 24px;border:1px solid var(--line);position:relative}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--aqua);font-weight:800;display:grid;place-items:center;margin-bottom:14px}
+.step h3{color:var(--navy);margin-bottom:6px}
+.step p{color:var(--muted);font-size:.96rem}
+
+/* Clinics */
+.clinic{background:var(--navy);color:#fff;border-radius:26px;padding:48px 34px;display:grid;gap:28px;grid-template-columns:1fr}
+.clinic h2{color:#fff}
+.clinic .eyebrow{color:var(--aqua)}
+.clinic p{color:#c2d4ec;max-width:560px}
+.ticks{list-style:none;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;color:#e3eefb}
+.ticks li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--aqua);color:var(--navy);font-weight:800;display:grid;place-items:center;font-size:.8rem;margin-top:2px}
+
+.focus{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.fcard{background:var(--navy);color:#fff;border-radius:26px;padding:40px 32px}
+.fcard .fico{width:56px;height:56px;border-radius:16px;background:var(--aqua);display:grid;place-items:center;font-size:1.7rem;margin-bottom:18px}
+.fcard h3{font-size:1.4rem;margin-bottom:10px;color:#fff}
+.fcard p{color:#c2d4ec;margin-bottom:22px}
+
+/* About */
+.about{display:grid;gap:36px;grid-template-columns:1fr;align-items:center}
+.photo{width:210px;height:210px;border-radius:50%;overflow:hidden;border:5px solid var(--aqua);box-shadow:0 14px 34px rgba(10,31,68,.18);background:var(--aqua);display:grid;place-items:center;color:var(--navy);font-size:3.4rem;font-weight:800}
+.photo img{width:100%;height:100%;object-fit:cover}
+.role{color:var(--teal-dark);font-weight:700;margin-bottom:14px}
+.about p{color:#33456b;margin-bottom:12px}
+
+/* Contact */
+.contact{background:linear-gradient(135deg,var(--navy),#12357a);color:#fff;text-align:center;border-radius:26px;padding:56px 26px}
+.contact h2{color:#fff}
+.contact p{color:#bcd0f5;max-width:520px;margin:0 auto 28px}
+
+footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.9rem}
+footer b{color:var(--navy)}
+
+@media(min-width:860px){
+ .hero .wrap{grid-template-columns:1.15fr .85fr}
+ .clinic{grid-template-columns:1.2fr .8fr;padding:56px 52px;align-items:center}
+ .about{grid-template-columns:230px 1fr}
+}
+@media(max-width:760px){
+ .menu-btn{display:block}
+ nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);flex-direction:column;align-items:stretch;padding:10px 22px 20px;border-bottom:1px solid rgba(127,255,212,.18)}
+ nav.open{display:flex}
+ nav a{padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.08)}
+ nav a.cta{margin:14px 0 0;text-align:center;border:0;padding:14px}
+ .hero{padding:56px 0 64px}
+ section{padding:60px 0}
+ .clinic{padding:36px 24px}
+ .photo{width:170px;height:170px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a href="#home" class="brand">
+   <span class="badge"><img src="logo.png" alt="Gulzio logo" onerror="this.remove();"><b></b></span>
+   Gulzio
+  </a>
+  <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+  <nav id="nav" onclick="this.classList.remove('open')">
+   <a href="#services">Services</a>
+   <a href="#process">Process</a>
+   <a href="#industries">Industries</a>
+   <a href="#about">About</a>
+   <a href="#contact" class="cta">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<main id="home">
+
+<div class="hero">
+ <div class="wrap">
+  <div>
+   <span class="pill"><i></i> AI Automation &bull; Agentic AI</span>
+   <h1>We automate your busywork so you can <span>grow faster.</span></h1>
+   <p class="lead">Gulzio builds AI agents and smart workflows that capture leads, answer customers and save your team hours every single day.</p>
+   <a class="btn primary" href="#contact">Book a Free Call</a>
+   <a class="btn outline" href="#services">Our Services</a>
+  </div>
+  <div class="flow" aria-hidden="true">
+   <h4>A Gulzio workflow</h4>
+   <div class="row"><div class="ic">📥</div><p>New enquiry arrives<small>Website, WhatsApp or form</small></p></div>
+   <div class="arrow">↓</div>
+   <div class="row"><div class="ic">🤖</div><p>AI agent replies instantly<small>Answers questions 24/7</small></p></div>
+   <div class="arrow">↓</div>
+   <div class="row" style="margin-bottom:0"><div class="ic">✅</div><p>Lead saved &amp; appointment booked<small>Your team is notified</small></p></div>
+  </div>
+ </div>
+</div>
+
+<div class="stats">
+ <div class="wrap">
+  <div><strong>24/7</strong><span>AI support agents</span></div>
+  <div><strong>n8n</strong><span>Workflow automation</span></div>
+  <div><strong>Agentic AI</strong><span>Multi-step smart agents</span></div>
+  <div><strong>Clinics &amp; Schools</strong><span>Our two focus areas</span></div>
+ </div>
+</div>
+
+<section id="services">
+ <div class="wrap">
+  <p class="eyebrow">Services</p>
+  <h2>What we build for you</h2>
+  <p class="sub">Simple and reliable AI systems that connect with the tools you already use.</p>
+  <div class="grid">
+   <div class="card"><div class="ico">🎯</div><h3>Lead Capture</h3><p>Forms, chat and instant follow-ups that collect every enquiry and send it to your team or CRM.</p></div>
+   <div class="card"><div class="ico">🤖</div><h3>AI Support Agents</h3><p>Agents that answer customer questions 24/7, book appointments and hand over to a human when needed.</p></div>
+   <div class="card"><div class="ico">⚙️</div><h3>Workflow Automation</h3><p>Connect your apps and remove repeated manual work, from reports to notifications and social posting.</p></div>
+   <div class="card"><div class="ico">🧠</div><h3>Agentic AI</h3><p>Smart agents that plan, use tools and complete multi-step tasks on behalf of your business.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="process" class="alt">
+ <div class="wrap">
+  <p class="eyebrow">Process</p>
+  <h2>How we work together</h2>
+  <p class="sub">A clear four-step process, so you always know what happens next.</p>
+  <div class="steps">
+   <div class="step"><div class="n">1</div><h3>Discover</h3><p>We learn your business and find the tasks worth automating.</p></div>
+   <div class="step"><div class="n">2</div><h3>Design</h3><p>We plan the workflow or agent and agree on the result with you.</p></div>
+   <div class="step"><div class="n">3</div><h3>Build</h3><p>We build and test it with your real tools and data.</p></div>
+   <div class="step"><div class="n">4</div><h3>Launch &amp; Support</h3><p>We go live, train your team and keep improving the system.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="industries">
+ <div class="wrap">
+  <p class="eyebrow">Our focus</p>
+  <h2>Built for clinics and schools</h2>
+  <p class="sub">Both run on busy front desks and repeated questions. That is exactly where AI automation saves the most time.</p>
+  <div class="focus">
+   <div class="fcard">
+    <div class="fico">🏥</div>
+    <h3>Clinics &amp; Hospitals</h3>
+    <p>Patients message at all hours. Gulzio helps your team respond faster and never miss an appointment request.</p>
+    <ul class="ticks">
+     <li>Instant replies to patient enquiries</li>
+     <li>Appointment requests collected automatically</li>
+     <li>Reminders and follow-ups without manual work</li>
+     <li>Less pressure on your reception team</li>
+    </ul>
+   </div>
+   <div class="fcard">
+    <div class="fico">🎓</div>
+    <h3>Schools &amp; Education</h3>
+    <p>Admissions, fee questions and parent messages take hours. Gulzio automates the routine so staff can focus on students.</p>
+    <ul class="ticks">
+     <li>Admission enquiries answered and captured 24/7</li>
+     <li>Parent questions handled by an AI assistant</li>
+     <li>Fee, event and notice reminders sent automatically</li>
+     <li>Student and enquiry data organised in one place</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="about" class="alt">
+ <div class="wrap about">
+  <div class="photo"><img src="rehman.jpg" alt="Rehman Gul, Founder of Gulzio" onerror="this.remove()"></div>
+  <div>
+   <p class="eyebrow">About</p>
+   <h2>Rehman Gul</h2>
+   <p class="role">Founder, Gulzio</p>
+   <p>I help clinics and schools use AI automation and agentic AI to save time and serve people better. I build workflows with tools like n8n and focus on practical systems that work in real daily operations.</p>
+   <p>I also share what I learn openly on LinkedIn, because good automation should be easy to understand.</p>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="contact">
+   <p class="eyebrow" style="color:var(--aqua)">Contact</p>
+   <h2>Let's automate your business</h2>
+   <p>Tell me what takes up your team's time. I will reply with ideas on how AI can handle it.</p>
+   <a class="btn aqua" href="mailto:rehmangul2494@gmail.com">Email Me</a>
+   <a class="btn light" href="https://www.linkedin.com/company/gulzio/" target="_blank" rel="noopener">Gulzio on LinkedIn</a>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="wrap">&copy; <span id="y"></span> <b>Gulzio</b> &middot; AI Automation. Founded by Rehman Gul.</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
